@@ -76,20 +76,7 @@ html{
 	font-size: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
-	.carousel-inner .carousel-item p{
-		font-size: 14px;
-	}
-	.carousel-control-prev{
-		left: -5px;
-	}
-	.carousel-control-next{
-		right: -5px;
-	}
- 	.carousel-indicators{
-		top: 400px;
-	}
-}
+
 
 #reviews .carousel-control-prev{
 	background: #d67c06;
@@ -315,4 +302,79 @@ html{
 }
 .copyright .company-name a{
 	font-size: 16px;
+}
+
+@media   (max-width: 640px) {
+	.carousel-inner .carousel-item p{
+		font-size: 14px;
+	}
+	.carousel-control-prev{
+		left: -5px;
+	}
+	.carousel-control-next{
+		right: -5px;
+	}
+ 	.carousel-indicators{
+		top: 400px;
+    }
+    .upper {
+        display: flex;
+        background: #d0a772;
+        padding: 10px 0px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        padding-right: 0px;
+    
+    }
+    .upper .row .col-md-4{
+        width: 100%;
+        margin: 10px 0px;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .overflow-hidden {
+        overflow: hidden;
+    }
+    
+    .upper i{
+        display: block;
+        float: left;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #fff;
+        color: #d0a772;
+        font-size: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    
+    .upper h4{
+        margin: 0px;
+        margin-top: 5px;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 0px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    .upper p{
+        margin: 0px;
+        color: #ffffff;
+        font-weight: 300;
+    }
+    .lead {
+        font-size: 18px;
+        line-height: 30px;
+        color: #767676;
+        margin: 0;
+        padding: 0;
+    }
 }
