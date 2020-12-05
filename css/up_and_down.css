@@ -288,7 +288,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.subscribe_form .submit {
+.subscribe_form .submit1 {
     background-color: #17a2b8;
     color: #fff;
     font-size: 16px;
@@ -302,7 +302,7 @@
 	cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.subscribe_form .submit:hover{
+.subscribe_form .submit1:hover{
 	font-size: 20px ;
 }
 
