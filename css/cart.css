@@ -10,6 +10,7 @@ h1.subMenuName {
   align-items: center;
   position: sticky;
   padding: 10px;
+  margin-bottom: 0px;
 }
 hr {
   width: 100%;
@@ -18,6 +19,7 @@ hr {
   border-width: 3px;
   border-color: black;
   margin: 0px;
+  padding: 0px;
 }
 .subMenu {
   width: 800px;
@@ -175,6 +177,8 @@ textarea {
   padding: 5px;
 }
 
+
+
 @media (max-width: 962px) {
 
   .subMenu {
@@ -240,6 +244,12 @@ textarea {
    
   }
   @media (max-width: 470px) {
+    h1.subMenuName {
+        font-size: 30px;
+      }
+      hr{
+          top:125px;
+      }
 
     .subMenu {
       width: 100%;
@@ -293,6 +303,7 @@ textarea {
         width: 100%;
         text-align: center;
       }
+      
   
    
   }
