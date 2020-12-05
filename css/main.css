@@ -19,3 +19,8 @@ body{
     background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.casCont{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
