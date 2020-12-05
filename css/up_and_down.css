@@ -261,12 +261,13 @@
 }
 
 .lower .row i{
-    transition:all 0.2s ease-in-out;
+    transition:all 0.5s ease-in-out;
 }
 
 .lower .row i:hover{
     color: #17a2b8;
     font-size: 35px;
+    transform: rotate(360deg);
 }
 
 .f-social {
