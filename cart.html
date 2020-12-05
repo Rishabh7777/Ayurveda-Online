@@ -73,6 +73,8 @@
               style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
                 style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
           <hr>
+
+          
         
           <div class="subMenu">
         
@@ -1108,7 +1110,7 @@
         
           </div>
         
-        
+        </div>
         
         
           <!-- cart -->
@@ -1142,6 +1144,415 @@
         $.get("footer.html", function (data) {
             $("#footer").replaceWith(data);
         });
+
+
+    
+
+//counter
+
+
+
+var arrayOfCounter = [];
+
+
+function dec(e) {
+
+  var itemId = e.target.value;
+
+  var j = 0;
+
+  for (var i = 0; i < arrayOfCounter.length; i++) {
+
+
+    if (arrayOfCounter[i][0] == itemId) {
+
+      j = 1;
+
+      break;
+
+    }
+
+  }
+
+  if (j == 1) {
+
+    var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
+
+    counter = counter - 1;
+
+    var amount = (counter * parseInt(e.target.name));
+
+
+
+
+
+
+    if (counter == 0) {
+
+
+      arrayOfCounter.splice(i, 1);
+
+
+
+
+
+    } else {
+
+      arrayOfCounter[i] = [itemId, counter, amount];
+
+      console.table(arrayOfCounter);
+
+
+    }
+    document.getElementById(itemId + "CounterValue").innerHTML = counter;
+
+    document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+    if (hold.length != 0) {
+
+      document.getElementById(itemId + "CounterValueCart").innerHTML = counter;
+
+      document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+      var totalAmount = 0;
+
+      for (i = 0; i < arrayOfCounter.length; i++) {
+
+        totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+      }
+
+      document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+
+
+    }
+
+  }
+}
+function inc(e) {
+
+  e.preventDefault();
+
+  var itemId = e.target.value;
+
+  let j = 0;
+
+  for (var i = 0; i < arrayOfCounter.length; i++) {
+
+
+    if (arrayOfCounter[i][0] == itemId) {
+
+      j = 1;
+
+      break;
+
+    }
+
+  }
+
+  counterName = itemId + "CounterValue";
+
+  var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
+
+  counter = counter + 1;
+
+  if (counter < 10) {
+
+    var amount = (counter * parseInt(e.target.name));
+
+
+
+    arrayOfCounter[i] = [itemId, counter, amount];
+
+    console.table(arrayOfCounter);
+
+    //console.table(arrayOfCounter);
+
+    document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
+
+    document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+    if (hold.length != 0) {
+
+      document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
+
+      document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+      var totalAmount = 0;
+
+      for (i = 0; i < arrayOfCounter.length; i++) {
+
+        totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+      }
+
+      document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+    }
+
+
+  } else {
+
+    alert("Maximum limit for an item is 9. If you still nedd more ,call the restaurant.Thank you.")
+  }
+
+
+}
+
+//addToCart
+var hold = [];
+
+function addToCart(e) {
+
+
+
+  var itemId = e.target.value;
+
+  var itemIdCart = e.target.value + "Cart";
+
+  let counter = parseInt(document.getElementById(e.target.value + "CounterValue").innerHTML);
+
+  if ((hold.length == 0) && (counter != 0)) {
+
+    let el = document.getElementById("emptyCart");
+
+
+    el.innerHTML = "";
+
+    document.getElementById("checkOut").style.display = "flex";
+
+    var totalAmount = 0;
+
+    for (i = 0; i < arrayOfCounter.length; i++) {
+
+      totalAmount = totalAmount + (arrayOfCounter[i][2]);
+
+    }
+
+    document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+
+
+  }
+  if (counter == 0) {
+
+
+    for (var i = 0; i < hold.length; i++) {
+
+      if (hold[i] == itemIdCart) {
+
+        break;
+
+      }
+
+    }
+
+    if (i == hold.length) {
+
+    }
+
+    else {
+
+
+      var el = document.getElementById(itemIdCart);
+
+
+      el.remove();
+
+      hold.splice(i, 1);
+
+      if (hold.length == 0) {
+
+        let el = document.getElementById("emptyCart");
+
+
+        el.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+        document.getElementById("checkOut").style.display = "none";
+
+        document.getElementById("totalAmount").innerHTML = "";
+
+
+      }
+
+    }
+
+  } else {
+
+    var addToCart = e.target.parentNode.parentNode;
+
+    let j = 0;
+
+    for (let i = 0; i < hold.length; i++) {
+
+      if (hold[i] == itemIdCart) {
+
+        j = 1;
+
+        break;
+      }
+
+
+    }
+
+    var totalAmount = 0;
+
+    for (i = 0; i < arrayOfCounter.length; i++) {
+
+      totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+    }
+
+    document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+    var item = addToCart.cloneNode(true);
+
+
+
+    item.id = itemIdCart;
+
+    item.childNodes[7].childNodes[1].childNodes[3].id = e.target.value + "CounterValueCart";
+
+    item.childNodes[9].id = e.target.value + "AmountCart";
+
+    var drop = item.childNodes[7].childNodes[3];
+
+    drop.remove();
+
+    var iDiv = document.createElement('button');
+
+    iDiv.className = 'addToCart';
+
+    iDiv.id = e.target.value + "AddToCart";
+
+    iDiv.innerHTML = "Delete";
+
+    iDiv.value = itemIdCart;
+
+    iDiv.addEventListener("click", function (e) {
+
+      var el = document.getElementById(itemIdCart);
+
+      el.remove();
+
+      document.getElementById(itemId + "CounterValue").innerHTML = 0;
+
+      document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs 0";
+
+      //console.log(hold);
+
+
+
+      for (i = 0; i < arrayOfCounter.length; i++) {
+
+
+        if (arrayOfCounter[i][0] == itemId) {
+
+          arrayOfCounter.splice(i, 1);
+
+          break;
+
+        }
+      }
+
+      var totalAmount = 0;
+
+      for (i = 0; i < arrayOfCounter.length; i++) {
+
+        totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+      }
+
+      document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+      for (i = 0; i < hold.length; i++) {
+
+        if (hold[i] == e.target.value) {
+
+
+          hold.splice(i, 1);
+
+          if (hold.length == 0) {
+
+            let check = document.getElementById("emptyCart");
+
+
+            check.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+            document.getElementById("checkOut").style.display = "none";
+
+            document.getElementById("totalAmount").innerHTML = "";
+
+          }
+
+          break;
+
+        }
+
+      }
+
+      //console.table(arrayOfCounter);
+
+      //console.log(hold);
+
+
+    });
+
+    item.childNodes[7].appendChild(iDiv);
+
+
+
+
+    if (j == 1) {
+
+      document.getElementById(itemIdCart).replaceWith(item);
+
+    } else {
+
+      hold.push(itemIdCart);
+
+    }
+
+    document.getElementById("cart1").appendChild(item);
+
+
+  }
+
+}
+
+function checkOut() {
+
+  //sessionStorage.setItem('myArray', arrayOfCounter);
+
+  var totalAmount = 0;
+
+  for (i = 0; i < arrayOfCounter.length; i++) {
+
+    totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+  }
+
+  if (totalAmount == 0) {
+
+    alert("Please add some item. Thank you!");
+
+  
+
+
+  } else {
+
+    window.sessionStorage.setItem("items", JSON.stringify(arrayOfCounter));
+
+
+    window.location.href = "dashboard";
+
+  }
+
+
+}
+
+
     </script>
 </body>
 
