@@ -1,3 +1,6 @@
+
+
+
 h1.subMenuName{
     font-size: 40px;
     color: black;
@@ -58,7 +61,7 @@ hr{
     width: 400px;
     
 }
-
+/
 .counter{
     display: inline;
     
@@ -85,12 +88,12 @@ img{
     display: flex;
     flex-direction: row;
   }
-  .counterValue {
+.counterValue {
     font-size: 30px;
     color: black;
     font-weight: bold;
-  }
-  button {
+}
+button {
     width: 30px;
     height: 30px;
     font-size: 20px;
@@ -147,7 +150,6 @@ img{
     border-collapse: collapse;
     width: 100%;
 }
-}
 
 td,th{
     border-right: 2px solid black;
@@ -163,7 +165,7 @@ td,th{
     flex-direction: column;
     padding: 10px;
     margin: 0px auto;
-}
+}*/
 
 label{
 
@@ -172,12 +174,12 @@ label{
 
 }
 
-input{
+/*input{
     height: 30px;
     width: 500px;
     padding: 5px;
     font-size: 20px;
-}
+}*/
 
 textarea{
     width: 500px;
