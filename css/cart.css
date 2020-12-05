@@ -147,7 +147,7 @@ img{
     border-collapse: collapse;
     width: 100%;
 }
-}
+
 
 td,th{
     border-right: 2px solid black;
@@ -366,4 +366,3 @@ textarea{
     }
     
 
-}
