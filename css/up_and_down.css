@@ -105,44 +105,44 @@
 	top: 320px;
 }
 
-.text-warning{
-	color: #bd7043 !important;
+h5 .text-warning{
+	color: #14465a !important;
 	font-size: 24px;
 }
 
 
 
 #reviews .carousel-control-prev{
-	background: #d67c06;
+	background: #3aa37b;
 	color: #ffffff;
 	display: block;
 	position: absolute;
-	width: 8%;
-	height: 50px;
+	width: 5%;
+	height: 45px;
 	top: 50%;
 	border-radius: 4px;
 	font-size: 28px;
 	opacity: 1;
 }
 #reviews .carousel-control-prev:hover{
-	background: #010101;
+	background: #70af80;
 	color: #ffffff;
 }
 
 #reviews .carousel-control-next{
-	background: #d67c06;
+	background: #3aa37b;
 	color: #ffffff;
 	display: block;
 	position: absolute;
-	width: 8%;
-	height: 50px;
+	width: 5%;
+	height: 45px;
 	top: 50%;
 	border-radius: 4px;
 	font-size: 28px;
 	opacity: 1;
 }
 #reviews .carousel-control-next:hover{
-	background: #010101;
+	background: #70af80;
 	color: #ffffff;
 }
 
