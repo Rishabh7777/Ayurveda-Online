@@ -3,7 +3,7 @@
     margin: 0px 20px;
 }
 .about-section .img-fluid{
-    box-shadow: -10px -10px 0px #d0a772;
+    box-shadow: -10px -10px 0px #07dda7;
     margin-top: 10px;
     width: 100%;
     height: 80% auto;
@@ -15,7 +15,7 @@
 	color: #010101;
 }
 .inner-column h1 span{
-	color: #eba626;
+	color: #07dda7;
 }
 .inner-column h4{
 	font-size: 16px;
@@ -26,13 +26,13 @@
 }
 .inner-column .btn-outline-new-white{
     color: #307885;
-    border-radius: 3px solid #a7712a;
-    border: 2px solid #9b6723;
+    border-radius: 3px solid #07dda7;
+    border: 2px solid #07dda7;
     margin: 10px ;
 }
 .inner-column .btn-outline-new-white:hover{
     color: #ffffff;
-    background-color: #d0a772;
+    background-color: #07dda7;
 }
 
 
@@ -43,7 +43,7 @@
 }
 .apan-ne-kiya h1{
     text-align: center;
-    text-decoration: underline dotted #9b6723;
+    text-decoration: underline dotted #07dda7;
     text-transform: uppercase;
 }
 .box-for-ownerzz h3{
