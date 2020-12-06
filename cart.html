@@ -327,260 +327,267 @@
 
 
 
-    <!--drinks-->
+    <!--churn-->
+        
+    <h1 class="subMenuName">CHURN<i title="CHURN"
+      style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
+        style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
 
-    <h1 class="subMenuName">DRINKS<i title="DRINKS" class="fas fa-glass-martini"
-        style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
-          style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
+  <hr>
 
-    <hr>
+  <div class="subMenu">
 
-    <div class="subMenu">
+    <div class="dish" id="agnimukhChurn">
 
-      <div class="dish" id="cappuccino">
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/cappuccino.jpg);"></div>
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/cappuccino.jpg);"></div>
-
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
-
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">CAPPUCCINO</h2>
-
-          <P>A coffee drink consisting of espresso and a milk foam mixture.<br>Qty:240ml <br><b>Price: </b><b>120</b>
-          </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="cappuccino" name="120">-</button>
-
-            <div id="cappuccinoCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="cappuccino" name="120">+</button>
-
-          </div>
-
-          <button class="addToCart" value="cappuccino" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="cappuccinoAmount">
-
-          Amount: Rs 0
-
-        </div>
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
 
-      <div class="dish" id="freakShake">
+      <div class="dishDescription" id="">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/freakShake.jpg);"></div>
+        <h2 style="margin: 0px;">AGNIMUKH CHURN</h2>
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
-
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">FREAK SHAKE</h2>
-
-          <P>Coffee Freakshakes are often made with cold brew coffee.<br>Qty:400ml <br><b>Price: </b><b>150</b> </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="freakShake" name="150">-</button>
-
-            <div id="freakShakeCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="freakShake" name="150">+</button>
-
-          </div>
-
-          <button class="addToCart" value="freakShake" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="freakShakeAmount">
-
-          Amount: Rs 0
-
-        </div>
+        <P>This churn is used for<br>Qty:100gm <br><b>Price: </b><b>140</b> </P>
 
       </div>
 
-      <div class="dish" id="espresso">
+      <div class="addToCartDiv">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/espresso.jpg);"></div>
+        <div class="counter">
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
+          <button id="dec" onclick="dec(event)" value="agnimukhChurn" name="140">-</button>
 
-        </div>
+          <div id="agnimukhChurnCounterValue" class="counterValue">0</div>
 
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">ESPRESSO</h2>
-
-          <P>A short, strong drink.<br>Qty:40ml <br><b>Price: </b><b>40</b> </P>
+          <button id="inc" onclick="inc(event)" value="agnimukhChurn" name="140">+</button>
 
         </div>
 
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="fespresso" name="40">-</button>
-
-            <div id="espressoCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="espresso" name="40">+</button>
-
-          </div>
-
-          <button class="addToCart" value="espresso" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="espressoAmount">
-
-          Amount: Rs 0
-
-        </div>
+        <button class="addToCart" value="agnimukhChurn" onclick="addToCart(event)">Add to cart</button>
 
       </div>
 
-      <div class="dish" id="icedLatte">
+      <div class="amount" id="agnimukhChurnAmount">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/icelatte.jpg);"></div>
-
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
-
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">ICED LATTE</h2>
-
-          <P>Coffee Freakshakes are often made with cold brew coffee.<br>Qty:400ml <br><b>Price: </b><b>150</b> </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="icedLatte" name="150">-</button>
-
-            <div id="icedLatteCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="icedLatte" name="150">+</button>
-
-          </div>
-
-          <button class="addToCart" value="icedLatte" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="icedLatteAmount">
-
-          Amount: Rs 0
-
-        </div>
+        Amount: Rs 0
 
       </div>
 
-      <div class="dish" id="chai">
+    </div>
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/chai.jpg);"></div>
+    <div class="dish" id="gasraxChurn">
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/freakShake.jpg);"></div>
 
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">CHAI</h2>
-
-          <P>1 cup is never enough.<br>Qty:200ml <br><b>Price: </b><b>40</b> </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="chai" name="40">-</button>
-
-            <div id="chaiCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="chai" name="40">+</button>
-
-          </div>
-
-          <button class="addToCart" value="chai" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="chaiAmount">
-
-          Amount: Rs 0
-
-        </div>
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
 
-      <div class="dish" id="bisleri">
+      <div class="dishDescription" id="">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/bisleri.jpg);"></div>
+        <h2 style="margin: 0px;">GASRAX CHURN</h2>
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
+        <P>This churn is used for<br>Qty:100gm <br><b>Price: </b><b>110</b> </P>
 
-        </div>
+      </div>
 
-        <div class="dishDescription" id="">
+      <div class="addToCartDiv">
 
-          <h2 style="margin: 0px;">ICED LATTE</h2>
+        <div class="counter">
 
-          <P>Water bottle.<br>Qty:500ml <br><b>Price: </b><b>20</b> </P>
+          <button id="dec" onclick="dec(event)" value="gasraxChurn" name="110">-</button>
 
-        </div>
+          <div id="gasraxChurnCounterValue" class="counterValue">0</div>
 
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="bisleri" name="20">-</button>
-
-            <div id="bisleriCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="bisleri" name="20">+</button>
-
-          </div>
-
-          <button class="addToCart" value="bisleri" onclick="addToCart(event)">Add to cart</button>
+          <button id="inc" onclick="inc(event)" value="gasraxChurn" name="110">+</button>
 
         </div>
 
-        <div class="amount" id="bisleriAmount">
+        <button class="addToCart" value="gasraxChurn" onclick="addToCart(event)">Add to cart</button>
 
-          Amount: Rs 0
+      </div>
+
+      <div class="amount" id="gasraxChurnAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="pradarantakChurn">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/espresso.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PRADARANTAK CHURN</h2>
+
+        <P>This churn is used for<br>Qty:100gm <br><b>Price: </b><b>130</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="pradarantakChurn" name="130">-</button>
+
+          <div id="pradarantakChurnCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="pradarantakChurn" name="130">+</button>
 
         </div>
+
+        <button class="addToCart" value="pradarantakChurn" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="pradarantakChurnAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="veeryashodhanChurn">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/icelatte.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">VEERYASHODHAN CHURN</h2>
+
+        <P>This churn is used for<br>Qty:100gm <br><b>Price: </b><b>140</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="veeryashodhanChurn" name="140">-</button>
+
+          <div id="veeryashodhanChurnCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="veeryashodhanChurn" name="140">+</button>
+
+        </div>
+
+        <button class="addToCart" value="veeryashodhanChurn" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="veeryashodhanChurnAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="saralVirechanChurn">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/chai.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">SARAL VIRECHAN CHURN</h2>
+
+        <P>This churn is used for<br>Qty:100gm <br><b>Price: </b><b>110</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="saralVirechanChurn" name="110">-</button>
+
+          <div id="saralVirechanChurnCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="saralVirechanChurn" name="110">+</button>
+
+        </div>
+
+        <button class="addToCart" value="saralVirechanChurn" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="saralVirechanChurnAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+    
+  </div>
+
+
+
+
+
+    <!--CAPSULE-->
+        
+    <h1 class="subMenuName">CAPSULE<i title="MAIN-COURSE"
+      style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
+        style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
+
+  <hr>
+
+  <div class="subMenu">
+
+    <div class="dish" id="antiDyroCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/burger.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">ANTI DYRO CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>175</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="antiDyroCapsule" name="175">-</button>
+
+          <div id="antiDyroCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="antiDyroCapsule" name="175">+</button>
+
+        </div>
+
+        <button class="addToCart" value="antiDyroCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="antiDyroCapsuleAmount">
+
+        Amount: Rs 0
 
       </div>
 
@@ -589,190 +596,335 @@
 
 
 
+    <div class="dish" id="acidLockCapsule">
 
-    <!--MAIN-COURSE-->
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/pizza.jfif);"></div>
 
-    <h1 class="subMenuName">MAIN-COURSE<i title="MAIN-COURSE" class="fas fa-utensils"
-        style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
-          style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
-
-    <hr>
-
-    <div class="subMenu">
-
-      <div class="dish" id="burger">
-
-        <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/burger.jpg);"></div>
-
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
-
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">BURGER</h2>
-
-          <P>Best burger in town that i can promise.Comes with fries. <br><b>Price: </b><b>120</b> </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="burger" name="120">-</button>
-
-            <div id="burgerCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="burger" name="120">+</button>
-
-          </div>
-
-          <button class="addToCart" value="burger" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="burgerAmount">
-
-          Amount: Rs 0
-
-        </div>
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
 
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">ACID LOCK CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>175</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="acidLockCapsule" name="175">-</button>
+
+          <div id="acidLockCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="acidLockCapsule" name="175">+</button>
+
+        </div>
+
+        <button class="addToCart" value="acidLockCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="acidLockCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
 
     </div>
 
 
-    <div class="subMenu">
-      <div class="dish" id="pizza">
+    <div class="dish" id="gasCleanCapsule">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/pizza.jfif);"></div>
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/kadaiPaneer.jpg);"></div>
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
-
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">PIZZA</h2>
-
-          <P>All veggie 9 inch pizza with cheese burst base. <br><b>Price: </b><b>200</b> </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="pizza" name="200">-</button>
-
-            <div id="pizzaCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="pizza" name="200">+</button>
-
-          </div>
-
-          <button class="addToCart" value="pizza" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="pizzaAmount">
-
-          Amount: Rs 0
-
-        </div>
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
-    </div>
 
-    <div class="subMenu">
-      <div class="dish" id="kadaiPaneer">
+      <div class="dishDescription" id="">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/kadaiPaneer.jpg);"></div>
+        <h2 style="margin: 0px;">GAS CLEAN CAPSULE</h2>
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
-
-        </div>
-
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">KADAI PANEER</h2>
-
-          <P>Grilled paneer inroasted vegetables gravy. <br><b>Price: </b><b>240</b> </P>
-
-        </div>
-
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="kadaiPaneer" name="240">-</button>
-
-            <div id="kadaiPaneerCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="kadaiPaneer" name="240">+</button>
-
-          </div>
-
-          <button class="addToCart" value="kadaiPaneer" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="kadaiPaneerAmount">
-
-          Amount: Rs 0
-
-        </div>
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>175</b> </P>
 
       </div>
-    </div>
 
-    <div class="subMenu">
-      <div class="dish" id="butterMasala">
+      <div class="addToCartDiv">
 
-        <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/butterMasala.jpg);"></div>
+        <div class="counter">
 
-        <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
-            alt="">
+          <button id="dec" onclick="dec(event)" value="gasCleanCapsule" name="175">-</button>
 
-        </div>
+          <div id="gasCleanCapsuleCounterValue" class="counterValue">0</div>
 
-        <div class="dishDescription" id="">
-
-          <h2 style="margin: 0px;">PANEER BUTTER MASALA</h2>
-
-          <P>All cooked in butter ,so delicious. <br><b>Price: </b><b>220</b> </P>
+          <button id="inc" onclick="inc(event)" value="gasCleanCapsule" name="175">+</button>
 
         </div>
 
-        <div class="addToCartDiv">
-
-          <div class="counter">
-
-            <button id="dec" onclick="dec(event)" value="butterMasala" name="220">-</button>
-
-            <div id="butterMasalaCounterValue" class="counterValue">0</div>
-
-            <button id="inc" onclick="inc(event)" value="butterMasala" name="220">+</button>
-
-          </div>
-
-          <button class="addToCart" value="butterMasala" onclick="addToCart(event)">Add to cart</button>
-
-        </div>
-
-        <div class="amount" id="butterMasalaAmount">
-
-          Amount: Rs 0
-
-        </div>
+        <button class="addToCart" value="gasCleanCapsule" onclick="addToCart(event)">Add to cart</button>
 
       </div>
+
+      <div class="amount" id="gasCleanCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
     </div>
+
+
+    <div class="dish" id="charmCleanCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/butterMasala.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">CHARM CLEAN CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>175</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="gasCleanCapsule" name="175">-</button>
+
+          <div id="gasCleanCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="gasCleanCapsule" name="175">+</button>
+
+        </div>
+
+        <button class="addToCart" value="gasCleanCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="gasCleanCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="fatlessCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/mixVeg.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">FATLESS CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>200</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="fatlessCapsule" name="200">-</button>
+
+          <div id="fatlessCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="fatlessCapsule" name="200">+</button>
+
+        </div>
+
+        <button class="addToCart" value="fatlessCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="fatlessCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="madhurolCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/naan.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">MADHUROL CAPSULE</h2>
+
+        <P>This capsule is used for<br>Qty:60 Cap.<br><b>Price: </b><b>200</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="madhurolCapsule" name="200">-</button>
+
+          <div id="madhurolCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="madhurolCapsule" name="200">+</button>
+
+        </div>
+
+        <button class="addToCart" value="madhurolCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="madhurolCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="livCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/butterNaan.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">LIV CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>185</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="livCapsule" name="185">-</button>
+
+          <div id="livCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="livCapsule" name="185">+</button>
+
+        </div>
+
+        <button class="addToCart" value="livCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="livCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="pilesCureCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/VegBiriyani.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PILES CURE CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>185</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="pilesCureCapsule" name="185">-</button>
+
+          <div id="pilesCureCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="pilesCureCapsule" name="185">+</button>
+
+        </div>
+
+        <button class="addToCart" value="pilesCureCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="pilesCureCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+
+    <div class="dish" id="vatkilCapsule">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/dosa.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">VATKIL CAPSULE</h2>
+
+        <P>This capsule is used for <br>Qty:60 Cap.<br><b>Price: </b><b>185</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="vatkilCapsule" name="185">-</button>
+
+          <div id="vatkilCapsuleCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="vatkilCapsule" name="185">+</button>
+
+        </div>
+
+        <button class="addToCart" value="vatkilCapsule" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="vatkilCapsuleAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+  </div>
 
 
 
