@@ -12,7 +12,7 @@ body {
     background-color: #5563aa;
     font-family: 'Open Sans', sans-serif;
     min-width: 222px;
-    background-image: url(/images/show1.jpg);
+    background-image: url(/images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -24,11 +24,12 @@ body {
     border-radius: 8px;
     overflow: hidden;
     width: 400px;
+    box-shadow: 10px 10px 10px black;
 }
 
 h1 {
     text-align: center;
-    background-color: #fbf6f0;
+    background-color: #17a2b8;
     padding: 10px;
 }
 
@@ -72,7 +73,7 @@ small {
 .form button {
     display: block;
     width: 100%;
-    background-color: #362bcf;
+    background-color:#17a2b8;
     color: white;
     padding: 10px;
     text-align: center;
@@ -80,10 +81,12 @@ small {
     border: none;
     border-radius: 5px;
     margin: 20px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .form button:hover {
-    background-color: seagreen;
+    background-color: gray;
+    font-size: 15px;
 }
 
 .form-data.success input {

@@ -11,6 +11,7 @@
     position: relative;
     z-index: 2;
     width: 97.5%;
+    text-shadow: 5px 5px 5px black;
     margin: 0px auto;
 }
 
@@ -23,7 +24,7 @@
     top: 0;
     width: 100%;
     z-index: 0;
-    opacity: 0.7;
+    opacity: 0;
 }
 
 @media (max-width:999px){
