@@ -24,3 +24,13 @@ body{
     justify-content:center ;
     align-items: center;
 }
+
+.whyImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whyImage img{
+    width: 90%;
+    /* height: 70vh; */
+}
