@@ -106,15 +106,15 @@
 }
 
 h5 .text-warning{
-	color: #14465a !important;
+	color: #145a39 !important;
 	font-size: 24px;
 }
 
 
 
 #reviews .carousel-control-prev{
-	background: #3aa37b;
-	color: #ffffff;
+	background: #ffffff;
+	color: #3aa37b;
 	display: block;
 	position: absolute;
 	width: 5%;
@@ -125,13 +125,13 @@ h5 .text-warning{
 	opacity: 1;
 }
 #reviews .carousel-control-prev:hover{
-	background: #70af80;
+	background: #3aa37b;
 	color: #ffffff;
 }
 
 #reviews .carousel-control-next{
-	background: #3aa37b;
-	color: #ffffff;
+	background: #ffffff;
+	color: #3aa37b;
 	display: block;
 	position: absolute;
 	width: 5%;
@@ -142,7 +142,7 @@ h5 .text-warning{
 	opacity: 1;
 }
 #reviews .carousel-control-next:hover{
-	background: #70af80;
+	background: #3aa37b;
 	color: #ffffff;
 }
 
