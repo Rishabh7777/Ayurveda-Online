@@ -25,13 +25,35 @@ body{
     align-items: center;
 }
 
-.whyImage{
+.whyImage .uno{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.whyImage img{
+
+.whyImage .uno img{
     width: 90%;
     border: 1px dashed #17b895;
     /* height: 70vh; */
+}
+.whyImage .thress{
+  display: none;
+}
+
+@media (max-width:1099px) and (min-width: 300px ){
+    .whyImage .thress{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whyImage .thress img{  
+        display: block;
+        width: 90%;
+        border: 1px dashed #17b895;
+    }
+
+    .whyImage .uno{
+        display: none;
+      }
 }
