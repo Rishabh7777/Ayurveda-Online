@@ -8,6 +8,7 @@ This project is aimed at developing an online static website for a Ayurvedic fac
 We have created a cart system to allow user to order ayurvedic medicines.
 
 <h2>TEAM MEMBERS : </h2>
+
 RACHIT RAI (181500524)
 
 KSHITIJ GUPTA (181500336)
