@@ -12,7 +12,7 @@ body {
     background-color: #5563aa;
     font-family: 'Open Sans', sans-serif;
     min-width: 222px;
-    background-image: url(/images/bg.jpg);
+    background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
