@@ -9,8 +9,11 @@ We have created a cart system to allow user to order ayurvedic medicines.
 
 <h2>TEAM MEMBERS : </h2>
 RACHIT RAI (181500524)
-KSHITIJ GUPTA (181500336) 
+
+KSHITIJ GUPTA (181500336)
+
 RISHABH TIWARI (181500566)
+
 MADHAV GARG (181500356)
 
 <h2> PROJECT STATUS : </h2>
